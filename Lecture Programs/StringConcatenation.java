@@ -1,4 +1,4 @@
-public class Argumentsss {
+public class StringConcatenation {
     public static void main(String[] args) {
         String text1="He";
         String text2="llo";

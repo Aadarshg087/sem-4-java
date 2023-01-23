@@ -1,6 +1,6 @@
 import java.math.BigInteger;
 import java.util.Scanner;
-class First {
+class Variables {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         System.out.println("How old are you? ");
