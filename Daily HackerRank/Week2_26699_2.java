@@ -28,6 +28,8 @@ public class Week2_26699_2 {
             System.out.print((int) c + " ");
         } else
             System.out.print((num3 + 1) + " ");
+
+        input.close();
     }
 
 }
