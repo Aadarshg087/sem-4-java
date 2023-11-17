@@ -1,0 +1,41 @@
+Create a switch which scan over multiple host
+
+Open LAB
+
+Region a01 in 4 tab
+distributed switch
+click new distributed switch
+Select version by default 8 version
+you'll have the option of uplink port
+Default value of up link 2
+Uplink port- > flow of information to particular host
+check the create default a port group HOL will create on behalf of you
+if not checked
+	if you want to create your own port group
+	Add and manage host
+	select host(include both if you want)
+	select 2 hpysical adapter(same no. of uplink ports)
+	there is VM kernal (decides the flow of info)
+	Click on assign on all
+	Click finish
+
+go to the machine and action and edit settings
+in network adapter and search for the VM kernel
+
+
+---------- Creating a data store ---------------------------
+Go to the third tab datastore
+region
+actions
+storage
+new datastore
+VMFS
+give name
+select host (host 1 or select free host)
+select disk
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+Download ISO Files for creating Virtual Machines- 172.18.20.7
+Username - user
+Password - 123
+
+
+Update the packages -> apt update
+
+--------------- How to share file between host OS and Guest OS ---------------------
+
+
+- Open settings of the virtual machine
+- Go to options
+- Enable the file sharing
+- Provide path
+- Do not check the read only option. Go with the other option which will allow you to make changes
+- Install package for file sharing (terminal command) -> apt install open-vm-tools-desktop to check whether the folder is recognized or not(terminal command) -> vmware-hgfsclient
+
+- it will show the mount point(terminal command) -> df -H
+
+Mount Point -> path that any external device like HDD that you connect to your your linux system will be recognized and be accessible
+
+
+mnt and media
+by convention
+mnt -> parmanet
+media -> temporary 
+to check whehter something exist in mnt or not ->ls /mnt
+to create  a folder in mnt -> mkdir /mnt/hgfs(folder_name)
+
+fstab -> file system table
+file system in user state(using this tech we can do it share the file Tech (fuse))
+
+
+
+nano /etc/fstab
+- now add the below line in the file
+"vmhgfs-fuse /mnt/hgfs fuse defaults,allow_other 0 0 "
+
+ctrl+x
+y
+enter
+
+to check -> df -h
+also, to check -> ls /mnt
+- now the folder will appear after this command
+
+- Now, make changes from the either way, it will show whever you access

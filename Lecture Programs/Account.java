@@ -4,10 +4,6 @@ public class Account {
     private String email;
     private float amount;
 
-    public (){
-
-    }
-
     // Set Constructor
     public Account(long acc_no, String name, String email, float amount) {
         this.acc_no = acc_no;
